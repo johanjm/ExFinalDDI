@@ -56,6 +56,7 @@ function App() {
 
     switch (texto){
       case "Cualquier categoria":
+        SetCons(texto)
         break;
       default:
         const url1 = await fetch('https://api.chucknorris.io/jokes/random?category='+texto)
